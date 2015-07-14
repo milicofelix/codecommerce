@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('frutas','WelcomeController@index');
+Route::get('welcome/category','WelcomeController@example');
+Route::get('welcome/category_list',['as'=>'welcome.category_list','uses'=>'WelcomeController@example2']);
